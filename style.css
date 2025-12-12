@@ -1,0 +1,84 @@
+:root {
+   --orange: #ecd444;
+   --black: #000000;
+   --gray: #30343f;
+}
+body {
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-image: url("assets/background.png");
+   background-size: cover;
+   font-family: 'Arial', sans-serif;
+   overflow: hidden;
+}
+#overlay {
+   display: none;
+   justify-content: center;
+   align-items: center;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background: rgba(0, 0, 0, 0.85);
+   position: fixed;
+   backdrop-filter: blur(5px);
+   z-index: 99;
+}
+#inputBox {
+   width: 250px;
+   background: #30343f;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 40px;
+   gap: 20px;
+}
+input {
+   width: 200px;
+   padding: 15px;
+   font-size: 18px;
+   text-align: center;
+   outline: none;
+   border-radius: 10px;
+   background: #fff;
+   color: var(--black);
+}
+input:focus { 
+   outline: none;
+}
+
+button.startBtn {
+   width: 150px;
+   background-color: transparent;
+   outline: none;
+   cursor: pointer;
+   padding: 15px 16px;
+   font-size: 20px;
+   font-weight: bold;
+   text-transform: uppercase;
+   border: 3px solid var(--orange);
+   color: var(--orange);
+   border-radius: 10px;
+   margin-top: 10px;
+   transition: .5s;
+}
+button.startBtn:hover {
+   background-color: var(--orange);
+   color: var(--black);
+}
+   
+button.cancelBtn {
+   background: none;
+   border: none;
+   color: gray;
+   font-size: 14px;
+   cursor: pointer;
+}
+button.cancelBtn:hover {
+   color: #fff; 
+}
